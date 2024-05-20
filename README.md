@@ -89,7 +89,8 @@ Once the application is running, you can perform the following operations:
 ## Demo
 
 A demo video of the application 
-[bank-video]!(bank-video.gif)
+
+![bank-video](bank-video.gif)
 
 ## Project Structure
 
