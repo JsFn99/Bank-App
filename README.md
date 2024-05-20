@@ -42,7 +42,7 @@ The frontend is developed using Angular with the following components:
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/yourusername/bank-web-app.git
+    git clone https://github.com/JsFn99/bank-web-app.git
     cd bank-web-app/backend
     ```
 
@@ -128,19 +128,3 @@ frontend/
 ├── src/styles.css
 └── angular.json
 ```
-
-## Contributing
-
-Contributions are welcome! Please create a pull request with a detailed description of the changes.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
-
-## Contact
-
-For any queries, please contact [your-email@example.com](mailto:your-email@example.com).
-
----
-
-Thank you for using the Bank Web App!
