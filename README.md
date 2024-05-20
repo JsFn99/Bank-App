@@ -88,7 +88,8 @@ Once the application is running, you can perform the following operations:
 
 ## Demo
 
-A demo video of the application can be found [here](./path/to/bank-App.mov).
+A demo video of the application 
+[bank-video]!(bank-video.gif)
 
 ## Project Structure
 
