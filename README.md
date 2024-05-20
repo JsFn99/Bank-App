@@ -90,7 +90,7 @@ Once the application is running, you can perform the following operations:
 
 A demo video of the application 
 
-![bank-video](bank-video.gif)
+![bank-video](bank-App.gif)
 
 ## Project Structure
 
