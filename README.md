@@ -1,27 +1,144 @@
-# BankWeb
+# Bank Web App Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
+## Overview
 
-## Development server
+This is a Bank Web Application built using a microservice architecture with Spring Boot and Maven on the backend and Angular on the frontend. The application provides functionalities to manage customer accounts, view account details, and perform banking operations.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Architecture
 
-## Code scaffolding
+### Backend
+The backend is developed using Spring Boot with the following components:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **DTOs (Data Transfer Objects):** These are objects used to transfer data between layers and services.
+- **Entities:** These are the domain objects representing the data model.
+- **Enums:** These represent the fixed set of constants used throughout the application.
+- **Exceptions:** Custom exceptions to handle various error scenarios.
+- **Mappers:** Classes that map between DTOs and Entities.
+- **Repositories:** Interfaces for CRUD operations on entities.
+- **Services:** Business logic for the application.
+- **Web:** REST controllers handling HTTP requests and responses.
 
-## Build
+### Frontend
+The frontend is developed using Angular with the following components:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- **Accounts:** Components related to account management.
+- **Customer Accounts:** Components for managing customer-specific accounts.
+- **Customers:** Components for customer management.
+- **Model:** Data models used in the application.
+- **Navbar:** Navigation bar component.
+- **New Customer:** Component for adding new customers.
+- **Services:** Angular services for making HTTP requests to the backend.
 
-## Running unit tests
+## Getting Started
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Prerequisites
 
-## Running end-to-end tests
+- Java 11+
+- Maven 3+
+- Node.js 12+
+- Angular CLI
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+### Backend Setup
 
-## Further help
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/yourusername/bank-web-app.git
+    cd bank-web-app/backend
+    ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+2. **Build the project:**
+    ```bash
+    mvn clean install
+    ```
+
+3. **Run the application:**
+    ```bash
+    mvn spring-boot:run
+    ```
+
+### Frontend Setup
+
+1. **Navigate to the frontend directory:**
+    ```bash
+    cd bank-web-app/frontend
+    ```
+
+2. **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3. **Run the application:**
+    ```bash
+    ng serve
+    ```
+
+4. **Open your browser and navigate to:**
+    ```
+    http://localhost:4200
+    ```
+
+## Usage
+
+Once the application is running, you can perform the following operations:
+
+- **Manage Customers:** Add, view, update, and delete customer information.
+- **Manage Accounts:** Create, view, update, and delete bank accounts.
+- **Customer Accounts:** View and manage accounts specific to a customer.
+
+## Demo
+
+A demo video of the application can be found [here](./path/to/bank-App.mov).
+
+## Project Structure
+
+### Backend
+```
+backend/
+├── src/main/java/com/example/bankapp
+│   ├── dtos
+│   ├── entities
+│   ├── enums
+│   ├── exceptions
+│   ├── mappers
+│   ├── repositories
+│   ├── services
+│   └── web
+├── src/main/resources
+│   ├── application.properties
+│   └── static
+└── pom.xml
+```
+
+### Frontend
+```
+frontend/
+├── src/app
+│   ├── accounts
+│   ├── customer-accounts
+│   ├── customers
+│   ├── model
+│   ├── navbar
+│   ├── new-customer
+│   └── services
+├── src/assets
+├── src/environments
+├── src/styles.css
+└── angular.json
+```
+
+## Contributing
+
+Contributions are welcome! Please create a pull request with a detailed description of the changes.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
+
+## Contact
+
+For any queries, please contact [your-email@example.com](mailto:your-email@example.com).
+
+---
+
+Thank you for using the Bank Web App!
