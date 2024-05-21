@@ -42,7 +42,7 @@ The frontend is developed using Angular with the following components:
 
 1. **Clone the repository:**
     ```bash
-    git clone https://github.com/JsFn99/bank-web-app.git
+    git clone https://github.com/JsFn99/Bank-App
     cd bank-web-app/backend
     ```
 
